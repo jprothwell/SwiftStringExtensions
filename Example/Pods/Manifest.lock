@@ -1,0 +1,16 @@
+PODS:
+  - SwiftStringExtensions (0.1.0)
+
+DEPENDENCIES:
+  - SwiftStringExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftStringExtensions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftStringExtensions: 950d8c43c0eae3ad40910c1e6da046c0763950ed
+
+PODFILE CHECKSUM: 568aa2a3b61c8e53edc7958007c4e20ad26fd07d
+
+COCOAPODS: 1.5.3
