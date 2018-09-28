@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import SwiftStringExtensions
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        guard "false".toBool() else {
+            print("false")
+            return
+        }
     }
 
     override func didReceiveMemoryWarning() {
