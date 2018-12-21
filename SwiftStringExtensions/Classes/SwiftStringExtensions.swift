@@ -15,6 +15,10 @@ public extension String{
         return self.toNumber()?.floatValue
     }
     
+    public func toDouble() -> Double? {
+        return self.toNumber()?.doubleValue
+    }
+    
     public func toInt() -> Int? {
         return self.toNumber()?.intValue
     }
