@@ -1,29 +1,29 @@
 import Foundation
 
 public extension String{
-    public func trimmed() -> String {
+    func trimmed() -> String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
-    public func toNumber()->NSNumber? {
+    func toNumber()->NSNumber? {
         let nf = NumberFormatter()
         nf.numberStyle = .decimal
         return nf.number(from: self)
     }
     
-    public func toFloat() -> Float? {
+    func toFloat() -> Float? {
         return self.toNumber()?.floatValue
     }
     
-    public func toDouble() -> Double? {
+    func toDouble() -> Double? {
         return self.toNumber()?.doubleValue
     }
     
-    public func toInt() -> Int? {
+    func toInt() -> Int? {
         return self.toNumber()?.intValue
     }
     
-    public func toBool() -> Bool {
+    func toBool() -> Bool {
         let trimmed = self.trimmed().lowercased()
         switch trimmed {
         case "true", "yes", "1":
